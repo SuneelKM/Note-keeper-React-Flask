@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, request, json
 from flask_sqlalchemy import SQLAlchemy
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='./build', static_url_path='/')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///notes.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
@@ -23,6 +23,11 @@ class NoteApp(db.Model):
 
 
 db.create_all()
+
+
+@app.route('/')
+def index():
+    return app.send_static_file('index.html')
 
 
 @app.route("/all")
