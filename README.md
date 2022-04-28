@@ -4,8 +4,7 @@ This project was created using <b>React.js</b> as frontend and <b>Python Flask</
 
 
 
-<img src="https://github.com/SuneelKM/Note-keeper-React/blob/master/screenshot/notes.png">
-
+<img src="https://github.com/SuneelKM/Note-keeper-React-Flask/blob/master/screenshot/image.png">
 # NOTES KEEPER
 
 
