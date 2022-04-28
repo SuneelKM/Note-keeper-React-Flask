@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was created using <b>React.js</b> as frontend and <b>Python Flask</b> as backend.
+This project was created using <b>React.js</b> in frontend and <b>Python Flask</b> in backend.
 
 
 
