@@ -1,6 +1,5 @@
 from flask import Flask, jsonify, request, json
 from flask_sqlalchemy import SQLAlchemy
-import os
 
 app = Flask(__name__, static_folder='./build', static_url_path='/')
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///notes.db"
