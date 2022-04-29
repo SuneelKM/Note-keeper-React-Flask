@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+## https://note-app-react-flask.herokuapp.com/
 
-This project was created using <b>React.js</b> in frontend and <b>Python Flask</b> in backend.
+# This project was created using <b>React.js</b> in frontend and <b>Python Flask</b> in backend.
 
 
 
