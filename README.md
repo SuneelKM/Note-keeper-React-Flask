@@ -32,7 +32,7 @@ pip install -r requirements.txt
 
 ##### and then run main.py file
 ```bash
-python main.py
+python3 main.py
 ```
 
 ## Learn More
