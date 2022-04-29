@@ -20,6 +20,11 @@ This is a Note Keeper App (inspired by Google Keep).
 npm install
 ```
 
+  ##### And run the react app
+```bash
+npm start
+```
+
 ##### To run the Flask, first install the requirements in requirements.txt file
 ```bash
 pip install -r requirements.txt
@@ -28,11 +33,6 @@ pip install -r requirements.txt
 ##### and then run main.py file
 ```bash
 python main.py
-```
-
-  ##### And finally run the react app
-```bash
-npm start
 ```
 
 ## Learn More
