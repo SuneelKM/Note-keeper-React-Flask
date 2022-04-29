@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__, static_folder='./build', static_url_path='/')
 # app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///notes.db"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://xvevlakirekica:d59288d51f8bb7f59e2f57cf31f3a233db985d63aa3457b398fd17b816b11d4d@ec2-3-211-6-217.compute-1.amazonaws.com:5432/d3nikl9olku7l7"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
