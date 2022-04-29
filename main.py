@@ -8,7 +8,7 @@ db = SQLAlchemy(app)
 # "proxy": "https://noteapp-react-flask.herokuapp.com",
 
 
-##Cafe TABLE Configuration
+#Cafe TABLE Configuration
 class NoteApp(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(250), nullable=True)
