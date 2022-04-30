@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, request, json
 from flask_sqlalchemy import SQLAlchemy
 import os
+from flask_apscheduler import APScheduler
 
 app = Flask(__name__, static_folder='./build', static_url_path='/')
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("HEROKU_POSTGRESQL", "sqlite:///notes.db")
@@ -65,5 +66,16 @@ def strike_note(note_id):
     return jsonify({"success": "Successfully changed the strike."})
 
 
+def delete_all_data():
+    db.session.query(NoteApp).delete()
+    db.session.commit()
+
+
 if __name__ == '__main__':
+    scheduler = APScheduler()
+    scheduler.add_job(func=delete_all_data, trigger='interval', id='job', minutes=10)
+    scheduler.start()
     app.run(debug=True)
+
+
+

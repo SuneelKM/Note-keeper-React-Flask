@@ -1,5 +1,6 @@
 altgraph==0.17.2
 appnope==0.1.2
+APScheduler==3.9.1
 argon2-cffi==21.3.0
 argon2-cffi-bindings==21.2.0
 asttokens==2.0.5
@@ -23,10 +24,12 @@ et-xmlfile==1.1.0
 executing==0.8.2
 filelock==3.5.1
 Flask==2.0.3
+Flask-APScheduler==1.12.3
 Flask-SQLAlchemy==2.5.1
 folium==0.12.1.post1
 geographiclib==1.52
 geopy==2.2.0
+gunicorn==20.1.0
 idna==3.3
 ipykernel==6.9.0
 ipython==8.0.1
@@ -78,6 +81,7 @@ pyparsing==3.0.7
 pyrsistent==0.18.1
 python-dateutil==2.8.2
 pytz==2021.3
+pytz-deprecation-shim==0.1.0.post0
 pyzmq==22.3.0
 qtconsole==5.2.2
 QtPy==2.0.1
@@ -92,6 +96,8 @@ testpath==0.5.0
 tomli==2.0.1
 tornado==6.1
 traitlets==5.1.1
+tzdata==2022.1
+tzlocal==4.2
 urllib3==1.26.8
 virtualenv==20.13.1
 wcwidth==0.2.5
@@ -99,4 +105,3 @@ webencodings==0.5.1
 Werkzeug==2.0.3
 widgetsnbextension==3.5.2
 xlrd==2.0.1
-gunicorn==20.1.0
