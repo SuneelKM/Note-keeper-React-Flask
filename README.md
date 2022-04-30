@@ -1,4 +1,4 @@
-## https://note-app-react-flask.herokuapp.com/
+## https://suneelkm.github.io/Note-keeper-React/
 
 ## This project was created using <b>React.js</b> in frontend and <b>Python Flask</b> in backend.
 
