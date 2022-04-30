@@ -84,7 +84,6 @@ def delete_all_data():
     db.session.commit()
 
 
-
 if __name__ == '__main__':
     scheduler = APScheduler()
     scheduler.add_job(func=delete_all_data, trigger='interval', id='job', seconds=20)
