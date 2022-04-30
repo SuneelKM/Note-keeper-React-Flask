@@ -4,8 +4,7 @@ import os
 from flask_apscheduler import APScheduler
 
 app = Flask(__name__, static_folder='./build', static_url_path='/')
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("HEROKU_POSTGRESQL")
-# "sqlite:///notes.db"
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("HEROKU_POSTGRESQL", "sqlite:///notes.db")
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
