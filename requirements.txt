@@ -1,6 +1,5 @@
 altgraph==0.17.2
 appnope==0.1.2
-APScheduler==3.9.1
 argon2-cffi==21.3.0
 argon2-cffi-bindings==21.2.0
 asttokens==2.0.5
@@ -24,7 +23,6 @@ et-xmlfile==1.1.0
 executing==0.8.2
 filelock==3.5.1
 Flask==2.0.3
-Flask-APScheduler==1.12.3
 Flask-SQLAlchemy==2.5.1
 folium==0.12.1.post1
 geographiclib==1.52
