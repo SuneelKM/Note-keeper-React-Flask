@@ -6,7 +6,7 @@ app = Flask(__name__, static_folder='./build', static_url_path='/')
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("HEROKU_POSTGRESQL", "sqlite:///notes.db")
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
-
+# "proxy": "http://localhost:5000",
 
 ##Cafe TABLE Configuration
 class NoteApp(db.Model):
