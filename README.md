@@ -14,6 +14,7 @@ This is a Note Keeper App (inspired by Google Keep).
 
 
 ## Setup
+  #### Download or clone the repo.
   #### Make Sure you have Python (3.9.0) or high  installed. 
   ##### After cd'ing into the project directory, to install the React app dependencies, simply write
 ```bash
